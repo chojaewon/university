@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>조재원_202434-243485</title>
+    </head>
+    <body>
+        <style>
+            main{ width: 1644px; margin: 0 auto; overflow: hidden;}
+            nav{ background-color: lightblue; padding-top: 20px; padding-bottom: 20px;}
+            nav ul { width: 1644px; margin: 0 auto;}
+            nav ul li{display: inline;}
+            nav ul li > a{color: #ffffff; padding-left:30px; padding-right: 30px;}
+            aside{ float: right;}
+            aside.video_area video{ border: 1px solid red; padding: 10px;}
+            .iframe_area{ float: left;}
+            .iframe_area iframe{ border: 1px solid blue; padding: 10px; }
+
+            footer{ padding: 30px; background-color: black; color: #ffffff;}
+        </style>
+        <header>
+            <img src="image/logo.gif" alt="국립 한국방송통신대학교">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="https://www.knou.ac.kr/" target="_blank">방송통신대학교</a></li>
+                <li><a href="https://cs.knou.ac.kr/" target="_blank">컴퓨터과학과</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <article>
+                    <h3><a href="https://www.knou.ac.kr/" target="view">조재원_202434-243485</a></h3>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <h3>문제3.</h3>
+                    <details>
+                        <summary>HTML5 문서(컨텐츠 포함)를 아래 조건을 적용하여 자유롭게 작성하고, 웹브라우저 실행결과를 출력하시오.</summary>
+                        <ol>
+                            <li>
+                                레이아웃을 위한 HTML5 요소 (실질적인 컨텐츠 내용과 용도에 맞게 작성)<br/>
+                                header, nav(hyperlink), section, article, aside, footer(&특수이름 or 진수코드)
+                            </li>
+                            <li>
+                                본문에서 "본인이름_학번"을 클릭할 경우<br/>
+                                웹 페이지가 현재의 웹 페이지 안에서 출력 (창 삽입)
+                            </li>
+                            <li>
+                                poster 속성을 사용하여 비디오 파일을 11초~17초 재생 구간 지정<br/>
+                                &#x261e;PIP 모드에서 재생된 화면 포함
+                            </li>
+                            <li>
+                                CSS 적용 방법 중 style 요소(임베디드 방법)을 사용하여<br/>
+                                2가지 이상의 속성을 본문에 적용 (속성은 자유롭게 작성)
+                            </li>
+                        </ol>
+                    </details>
+                </article>
+                <article>
+                    <div class="iframe_area">
+                        <h3>창 영역</h3>
+                        <iframe name="view" src="https://www.knou.ac.kr/" frameborder="0" width="1200" height="800"
+                            srcdoc="">
+                        </iframe>
+                    </div>
+                    <aside class="video_area">
+                        <h3>비디오 재생</h3>
+                        <video width="400" height="300" controls autoplay poster="image/nature-3082832_640.jpg">
+                            <source src="video/video.mp4#t=11,17">
+                            현재 웹브라우저는 Video 요소를 지원하지 않습니다.
+                        </video>
+                    </aside>
+                </article>
+            </section>
+        </main>
+        <footer>
+            COPYRIGHT &copy;KOREA NATIONAL OPEN UNIVERSITY.ALL RIGHTS RESERVED.
+        </footer>
+    </body>
+</html>
