@@ -40,7 +40,7 @@ function sendJson(){
         element.innerHTML = response; // 새로운 데이터 추가
 
         // 5번째 상품 정보 조회
-        var product = document.querySelector('.sportsDetailContent .timeScheduleList').children[4];
+        var product = document.querySelector('.sportsDetailContent .timeScheduleList').children[5];
         var anc = product.querySelector('.btns a');
         // 버튼 활성화 시 클릭
         if( anc && anc.getAttribute('onclick') ){
@@ -66,3 +66,9 @@ function sendJson(){
     sendPostRequest(url, data, handleResponse);
 }
 
+
+
+// 사용방법
+// 위 스크립트를 개발자모드로 콘솔에 복사
+// 이후 아래 sendJson() 지속적 호출!!
+// sendJson()
